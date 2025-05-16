@@ -1,44 +1,46 @@
-🤖 Ibama Automation - Robô para Cadastro Massivo no Portal do IBAMA
+# 🤖 IbamaAutomation - Robô de Lançamento no Portal do IBAMA
 
-Este projeto apresenta uma automação criada em Java para preencher automaticamente formulários no portal do IBAMA. Ideal para empresas que precisam cadastrar centenas ou milhares de produtos, mas enfrentam restrições como a ausência de APIs, proibição de importação de dados ou integrações automáticas.
+Este projeto implementa um **robô de lançamento** que simula um usuário humano para preencher automaticamente o formulário do portal do IBAMA, que não oferece nenhuma integração via API ou importação de planilhas.
 
-🎯 Funcionalidades
+Ideal para quem precisa cadastrar **centenas ou milhares de produtos** e não pode depender de lançamentos manuais.
 
-Com esta automação, é possível:
+---
 
-📥 Ler dados diretamente de uma planilha Excel (.xls)  
-🖱️ Simular interações humanas com teclado e mouse  
-🌐 Preencher campos dinâmicos como Estado e Cidade  
-🔐 Realizar o processo após login manual com certificado digital  
-📄 Inserir automaticamente centenas de registros no portal do IBAMA
+## 🎯 Funcionalidades
 
-🚀 Benefícios
+Com este robô, é possível:
 
-✔️ Redução drástica do tempo de cadastro  
-✔️ Eliminação de tarefas repetitivas e manuais  
-✔️ Diminuição de erros de digitação humana  
-✔️ Aplicável a qualquer portal com estrutura semelhante
+✅ Realizar login manual com certificado digital  
+✅ Ler dados de uma planilha Excel (.xlsx)  
+✅ Preencher automaticamente os campos do formulário do IBAMA  
+✅ Simular um usuário humano usando **Selenium WebDriver**  
+✅ Lidar com campos dinâmicos (ex: estados e municípios com carregamento assíncrono)  
+✅ Gravar os dados de forma automatizada  
 
-🛠️ Tecnologias Utilizadas
+---
 
-- Java SE 11  
-- Apache POI (leitura de planilhas Excel)  
-- AWT Robot (simulação de teclado e mouse)  
-- Thread.sleep e timers para sincronização com carregamento do portal  
+## 🛠️ Tecnologias Utilizadas
 
-📹 Demonstração
+- Java 17  
+- Selenium WebDriver  
+- Apache POI (para leitura da planilha Excel)  
+- Google Chrome + ChromeDriver  
 
-*Vídeo opcional — inclua um link aqui se desejar demonstrar a automação em funcionamento*
+---
 
-📂 Como Usar
+## 🗂️ Estrutura da Planilha
 
-1. Exporte sua planilha de produtos no formato `.xls`
-2. Faça login manual no portal do IBAMA com certificado digital
-3. Execute o programa Java
-4. O robô começará a preencher os dados automaticamente
+A planilha deve conter, nesta ordem:
 
-👤 Autor
+1. Código da Matéria-Prima  
+2. Quantidade Transportada  
+3. Município de Origem  
+4. Município de Destino  
 
-Lucas Poltronieri Sampaio  
-📧 lucaspoltronierisampaio@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/lucaspoltronierisampaio)
+---
+
+## ⚙️ Personalização
+
+O código foi **adaptado à minha realidade**:
+
+- Campos como **estado de origem e destino**, **modo de**
