@@ -43,4 +43,19 @@ A planilha deve conter, nesta ordem:
 
 O código foi **adaptado à minha realidade**:
 
-- Campos como **estado de origem e destino**, **modo de**
+- Campos como **estado de origem e destino**, **modo de transporte** e **armazenamento** estão fixos no código para acelerar o processo.
+- Esses campos podem ser facilmente movidos para a planilha, conforme a necessidade do projeto.
+
+---
+
+## 📌 Observações
+
+- O login com certificado digital deve ser feito manualmente antes do início do processo.  
+- O código simula um usuário navegando e interagindo com o sistema como se fosse manual, respeitando o carregamento e validações do IBAMA.  
+
+---
+
+## 👤 Autor
+
+Lucas Poltronieri Sampaio  
+📧 lucaspoltronierisampaio@gmail.com
